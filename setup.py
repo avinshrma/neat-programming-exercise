@@ -22,5 +22,6 @@ setup(
     author=AUTHOR,
     author_email=EMAIL,
     install_requires=INSTALL_REQUIRES,
-    packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
 )
